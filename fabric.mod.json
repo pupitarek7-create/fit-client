@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fitclient",
+  "version": "${version}",
+  "name": "Fit Client",
+  "description": "Fit Client: a clean utility client with a tabbed menu and a sus chunk finder.",
+  "authors": ["Fit"],
+  "license": "GPL-3.0-only",
+  "icon": "assets/fitclient/icon.png",
+  "environment": "client",
+  "entrypoints": { "client": ["net.fit.client.FitClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
