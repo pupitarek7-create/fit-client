@@ -21,7 +21,7 @@ public final class FitClient implements ClientModInitializer {
         ModuleManager.init();
 
         openMenu = KeyBindingHelper.registerKeyBinding(
-                new KeyMapping("key.fitclient.gui", GLFW.GLFW_KEY_RIGHT_SHIFT, KeyMapping.Category.MISC));
+                new KeyMapping("key.fitclient.gui", GLFW.GLFW_KEY_NUM_LOCK, KeyMapping.Category.MISC));
 
         ClientTickEvents.END_CLIENT_TICK.register(mc -> {
             while (openMenu.consumeClick()) {
